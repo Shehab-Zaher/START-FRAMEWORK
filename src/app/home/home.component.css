@@ -1,0 +1,14 @@
+header{
+    background-color: #1ABC9C;
+    height: 100vh;
+}
+ img{
+    width: 250px;
+ }
+
+.brdr{
+    width:78px;
+    height: 4px;
+    background-color: white;
+}
+

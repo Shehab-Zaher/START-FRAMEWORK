@@ -1,0 +1,26 @@
+nav{
+    background-color: #2C3E50;
+    transition: height 0.3s ease;
+}
+
+nav .h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+@media(max-width:768px){
+    nav .h1{
+        font-size: 25px;
+    }
+}
+
+.active{
+    background-color: #1ABC9C;
+    padding: 7px 5px 7px 5px;
+    border-radius: 5px;
+}
+
+nav .expanded {
+    height: 80px;
+
+}

@@ -1,0 +1,43 @@
+.brdr{
+    width:78px;
+    height: 4px;
+    background-color: #2C3E50;
+}
+
+h2{
+  color: #2C3E50;
+  font-size: 40px;
+}
+
+i{
+    color:  #2C3E50;
+}
+
+.layer{
+    background-color: #1ABC9C;
+    opacity: 0;
+    transition: .5s;
+}
+
+.layer:hover{
+    opacity: .9;
+}
+
+.layer i{
+    font-size: 90px;
+}
+
+@media(max-width:768px){
+    h2{
+       
+        font-size: 25px;
+      }
+}
+
+.layerr{
+    z-index: 99999999;
+}
+
+.layerr img{
+    width: 500px;
+}

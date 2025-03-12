@@ -1,0 +1,10 @@
+@media(max-width:600px){
+    img{
+        width: 100%;
+    }
+}
+@media(min-width:600px){
+    img{
+        padding-top: 100px;
+    }
+}

@@ -1,0 +1,30 @@
+<nav>
+
+    <nav [class.expanded]="isExpanded" class="navbar navbar-expand-lg position-fixed w-100  px-lg-5 py-4 z-3">
+        <div class="container-fluid">
+          <a class="navbar-brand h1 text-white ms-lg-5" routerLink="home">START FRAMEWORK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+             
+              <li class="nav-item my-lg-0 my-3" >
+                <a class="nav-link text-white fw-bold d-inline" routerLink="about" routerLinkActive="active" >ABOUT</a>
+              </li>
+              <li class="nav-item my-lg-0 my-3 ">
+                <a class="nav-link text-white fw-bold d-inline  mx-lg-3  my-lg-0" routerLinkActive="active" routerLink="protoflio">PROTOFLIO</a>
+              </li>
+              <li class="nav-item  mt-lg-0 mt-3">
+                <a class="nav-link text-white fw-bold  d-inline me-lg-5" routerLinkActive="active" routerLink="contact">CONTACT</a>
+              </li>
+             
+             
+
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+</nav>

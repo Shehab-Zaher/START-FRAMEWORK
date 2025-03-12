@@ -1,0 +1,33 @@
+<section class="p-5">
+    <h2 class="text-center text-uppercase mt-5 pt-5 fw-bold">portfolio component</h2>
+    <div class="d-flex justify-content-center align-items-center my-3">
+        <div class="brdr"></div>
+        <i class="fa-solid fa-star  mx-3"></i>
+        <div class="brdr"></div>
+      </div>
+
+
+    <div class="container">
+        <div class="row g-4">
+          
+
+                @for (img of imgs; track $index) {
+                    <div class="col-lg-4 col-md-6 ">
+                    <div (click)="isHide= false ; layerr = img " class="position-relative overflow-hidden">
+                        <img [src]="imgs[$index]" class="w-100 rounded" alt="">
+    
+                        <div class="d-flex justify-content-center rounded align-items-center layer position-absolute top-0 end-0 start-0 bottom-0">
+                            <i class="fa-solid fa-plus fw-bold text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                }
+        </div>
+    </div>
+
+    <div [class.d-none]="isHide" 
+    (click)="hideModel( $event.target , eleImg)"
+    class="layerr position-fixed top-0 start-0 end-0 bottom-0 bg-dark d-flex justify-content-center align-items-center bg-opacity-50">
+        <img #eleImg [src]="layerr" class="rounded" alt="">
+    </div>
+</section>
